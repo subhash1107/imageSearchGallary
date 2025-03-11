@@ -1,0 +1,66 @@
+.search{
+  position: relative;
+  box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+}
+ 
+.search input{
+  height: 3rem;
+  text-indent: 25px;
+  border: 2px solid #d6d4d4;
+}
+
+.search button{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 2.4rem;
+  width: 90px;
+  background: blue;
+}
+
+.header-div{
+  background-color: #192a56;
+  padding: 2rem;
+}
+
+.header-div h2{
+  color: rgba(255, 255, 255, 0.67);
+}
+
+.image-gallery img{
+  height: 16rem;
+  width: 100%;
+  object-fit: cover;
+  /* object-fit: contain; */
+  /* object-fit: fill; */
+  /* object-position: top; */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.499);
+}
+
+:root {
+  --loading-grey: #ededed;
+}
+.skeleton-div{
+  height: 16rem;
+  width: 100%;
+  background-color: var(--loading-grey);
+  background: linear-gradient(
+    100deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, .5) 50%,
+    rgba(255, 255, 255, 0) 60%
+  ) var(--loading-grey);
+  background-size: 200% 100%;
+  background-position-x: 180%;
+  animation: 1s loading ease-in-out infinite;
+
+}
+
+@keyframes loading {
+  to {
+    background-position-x: -20%;
+  }
+}
+
+
+
