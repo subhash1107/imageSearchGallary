@@ -6,7 +6,7 @@ import { Main } from './components/Main';
 export const ImageContext = createContext()
 
 function App(){
-  const [searched, setSearched] = useState("")
+  const [searched, setSearched] = useState("nature")
   const {response, isLoading, error, fetchData} = UseAxios(`search/photos?page=1&query=nature&&client_id=${import.meta.env.VITE_ACCESS_KEY}`)
   const value = {
     response,

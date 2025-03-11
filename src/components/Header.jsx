@@ -8,14 +8,14 @@ function Header(){
       setInputTxt(e.target.value)
     }
     function btnEvent(){
-      fetchData(`search/photos?page=1&query=${inputTxt}&&client_id=${process.env.REACT_APP_ACCESS_KEY}`)
+      fetchData(`search/photos?page=1&query=${inputTxt}&&client_id=${import.meta.env.VITE_ACCESS_KEY}`)
       setSearched(inputTxt)
       setInputTxt("")
 
     }
     function enterKeyEvent(e){
       if(e.key === 'Enter'){
-        fetchData(`search/photos?page=1&query=${inputTxt}&&client_id=${process.env.REACT_APP_ACCESS_KEY}`)
+        fetchData(`search/photos?page=1&query=${inputTxt}&&client_id=${import.meta.env.VITE_ACCESS_KEY}`)
         setSearched(inputTxt)
         setInputTxt("")
       }
